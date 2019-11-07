@@ -1,0 +1,39 @@
+.card-header-icon {
+    display: table-cell;
+    font-size: 25px;
+    vertical-align: middle;
+    padding-right: 10px;
+    color: rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-header:hover {
+  color: #0066cc !important;
+  & .card-header-icon {
+    color: #0066cc !important;
+  }
+}
+
+.card-body-hide-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 !important;
+    transition: max-height 400ms ease;
+    transition: padding 400ms ease;
+  
+    &.card-body-show-content {
+      max-height: 100%;
+      padding: 1.25rem !important;
+    }
+  }
+
+.panda-card {
+  margin-bottom: 10px;
+}

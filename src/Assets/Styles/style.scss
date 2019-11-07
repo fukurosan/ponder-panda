@@ -1,0 +1,221 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+
+html,
+body,
+#root {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.non-footer-content {
+  min-height: calc(100vh - 300px);
+}
+
+.footer {
+  border-top: 1px solid #e7ebed;
+  height: 300px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer-ul {
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+.footer-li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-menu-column {
+  text-align: center;
+}
+
+.navigation-bar {
+  border-bottom: 1px solid #e7ebed;
+  min-height: 70px;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 50px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navigation-item {
+  margin-right: 30px;
+  line-height: 30px;
+}
+
+.navigation-link {
+  color: rgba(0, 0, 0, 0.6);
+  display: table;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.navigation-icon {
+  display: table-cell;
+  font-size: 25px;
+  vertical-align: middle;
+  padding-right: 10px;
+  color: rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.navigation-link:hover {
+  color: #0066cc !important;
+  text-decoration: none;
+  .navigation-icon {
+    color: #0066cc !important;
+  }
+}
+
+.login-page-left-column {
+  background: linear-gradient(45deg, rgba(0, 82, 164, 1) 0%, rgba(0, 102, 204, 1) 25%, rgba(102, 199, 214, 1) 100%);
+  height: calc(100vh);
+  color: #fff;
+  text-align: center;
+  display: table;
+}
+
+.login-left-column-inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.login-page-right-column {
+  display: table;
+}
+
+.login-form {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100vh;
+}
+
+.login-form-container {
+  max-width: 350px;
+  margin: auto;
+}
+
+.login-error {
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.panda-button {
+  border-radius: 2px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  color: #cfd8dc;
+  border: 1px solid #cfd8dc;
+  color: #546e7a;
+  padding: 10px 20px 10px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  background-color: white;
+}
+
+.panda-button:hover {
+  color: #0066cc;
+  border: 1px solid #0066cc;
+  box-shadow: 0px 4px 15px 0px rgba(0, 102, 204, 0.1);
+  text-decoration: none;
+}
+
+.panda-button:active {
+  box-shadow: none;
+}
+
+.panda-button-disabled {
+  background-color: lightgray;
+}
+
+.panda-form {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 2px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.panda-checkbox {
+  height:20px;
+  width:20px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-panda-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.deep-shadow-hover {
+  transition: box-shadow 0.2s linear;
+}
+.deep-shadow-hover:hover {
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+}
