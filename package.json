@@ -5,7 +5,7 @@
     "@tensorflow/tfjs": "^1.1.0",
     "bootstrap": "^4.3.1",
     "fukuro-react-modal": "0.0.4",
-    "highcharts": "^7.1.1",
+    "highcharts": "^9.0.0",
     "jquery": "^3.4.0",
     "lodash": "^4.17.11",
     "papaparse": "^4.6.3",
